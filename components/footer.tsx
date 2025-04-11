@@ -45,22 +45,25 @@ const Footer = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 3.2, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           >
-            <div className="flex space-x-2 text-[#8C8376] text-lg sm:text-sm">
-              <Link href="/terms" className="hover:text-white transition-colors underline cursor-pointer">
-                Terms of use
-              </Link>
-              <span>•</span>
-              <Link href="/privacy" className="hover:text-white transition-colors underline cursor-pointer">
-                Privacy Policy
-              </Link>
-              <span>•</span>
-              <Link href="/disclaimer" className="hover:text-white transition-colors underline cursor-pointer">
-                Disclaimer
-              </Link>
-              <span>•</span>
-              <Link href="/responsible-ai" className="hover:text-white transition-colors underline cursor-pointer">
-                Responsible AI
-              </Link>
+            <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2 text-[#8C8376] text-lg sm:text-sm">
+              <div className="flex space-x-2">
+                <Link href="/terms" className="hover:text-white transition-colors underline cursor-pointer">
+                  Terms of use
+                </Link>
+                <span>•</span>
+                <Link href="/privacy" className="hover:text-white transition-colors underline cursor-pointer">
+                  Privacy Policy
+                </Link>
+              </div>
+              <div className="flex space-x-2">
+                <Link href="/disclaimer" className="hover:text-white transition-colors underline cursor-pointer">
+                  AI Content Disclaimer
+                </Link>
+                <span>•</span>
+                <Link href="/responsible-ai" className="hover:text-white transition-colors underline cursor-pointer">
+                  Responsible AI
+                </Link>
+              </div>
             </div>
             
             <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-1 sm:space-y-0 sm:space-x-2 text-[#B4B0AA] text-xs sm:text-sm">
