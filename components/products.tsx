@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import WaitlistForm from "./waitlist-form";
+import { motion } from "framer-motion";
 
 const Products = () => {
   const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
@@ -11,47 +12,105 @@ const Products = () => {
   return (
     <div className="w-full mx-auto md:px-8 px-4 py-16">
       {/* Products Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <div className="lg:h-full mb-16 flex flex-col justify-between py-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-12">
+        {/* Left Column - First Row */}
+        <motion.div 
+          className="lg:h-full mb-16 flex flex-col justify-between py-6"
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 1.2, ease: [0.16, 1, 0.3, 1] }}
+        >
           <div className="mb-6 lg:mb-0">
-            <h1 className="md:text-5xl text-3xl font-semibold text-[#37373740] mb-4">
+            <motion.h1 
+              className="md:text-5xl text-3xl font-semibold text-[#37373740] mb-4"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.4, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            >
               Our full site is on the way—
-            </h1>
-            <h2 className="text-xl md:text-3xl text-[#978163] max-w-xl font-semibold">
+            </motion.h1>
+            <motion.h2 
+              className="text-xl md:text-3xl text-[#978163] max-w-xl font-semibold"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.6, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            >
               but two of our flagship products are already live and ready to
               use.
-            </h2>
+            </motion.h2>
           </div>
-          <h3 className="md:text-3xl text-xl text-[#767676] lg:mb-4">
+          <motion.h3 
+            className="md:text-3xl text-xl text-[#767676] lg:mb-4 max-w-xl"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.8, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          >
             Want early access to Neural Nexus or other MicroSaaS tools?
-          </h3>
-          <div className="mt-8">
+          </motion.h3>
+          <motion.div 
+            className="mt-8"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 2, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          >
             <button 
               onClick={() => setIsWaitlistOpen(true)}
               className="bg-[#2F2C28] text-white px-9 py-5 rounded-full hover:bg-[#3F3F3B] transition-colors cursor-pointer"
             >
               Join The Waitlist
             </button>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
+        {/* Right Column - First Row */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 xl:gap-12">
           {/* Lawbit Card */}
-          <div className="flex flex-col justify-between bg-white md:p-10 p-6 rounded-2xl">
+          <motion.div 
+            className="flex flex-col justify-between bg-white md:p-10 p-6 rounded-2xl"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.4, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
+          >
             <div className="space-y-4">
-              <Image
-                src="/images/lawbit.svg"
-                alt="Lawbit Logo"
-                width={50}
-                height={50}
-              />
-              <h2 className="text-2xl lg:text-4xl font-semibold text-[#2A2A2A]">Lawbit</h2>
-              <h3 className="text-xl text-[#343434] font-semibold">AI for Legal Intelligence</h3>
-              <p className="text-[#343434] text-sm lg:text-lg">
+              <motion.div
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ delay: 1.6, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              >
+                <Image
+                  src="/images/lawbit.svg"
+                  alt="Lawbit Logo"
+                  width={50}
+                  height={50}
+                />
+              </motion.div>
+              <motion.h2 
+                className="text-2xl lg:text-4xl font-semibold text-[#2A2A2A]"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1.8, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              >
+                Lawbit
+              </motion.h2>
+              <motion.h3 
+                className="text-xl text-[#343434] font-semibold"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 2, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              >
+                AI for Legal Intelligence
+              </motion.h3>
+              <motion.p 
+                className="text-[#343434] text-sm lg:text-lg"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 2.2, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              >
                 LawBit simplifies contract creation and analysis with AI-powered
                 accuracy. Effortlessly draft, review, and optimize legal
                 documents in seconds.
-              </p>
+              </motion.p>
             </div>
             <Link
               href="https://lawbit.ai"
@@ -59,28 +118,66 @@ const Products = () => {
               rel="noopener noreferrer"
               className="w-fit hover:cursor-pointer"
             >
-              <button className="bg-[#2F2C28] text-white px-10 py-4 rounded-full hover:bg-[#3F3F3B] transition-colors mt-6 w-fit cursor-pointer">
+              <motion.button 
+                className="bg-[#2F2C28] text-white px-10 py-4 rounded-full hover:bg-[#3F3F3B] transition-colors mt-6 w-fit cursor-pointer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 2.4, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              >
                 Try Now
-              </button>
+              </motion.button>
             </Link>
-          </div>
+          </motion.div>
 
           {/* Rovyk Card */}
-          <div className="flex flex-col justify-between bg-white md:p-10 p-6 rounded-2xl">
+          <motion.div 
+            className="flex flex-col justify-between bg-white md:p-10 p-6 rounded-2xl"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.6, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
+          >
             <div className="space-y-4">
-              <Image
-                src="/images/rovyk.svg"
-                alt="Rovyk Logo"
-                width={50}
-                height={50}
-              />
-              <h2 className="text-2xl lg:text-4xl font-semibold text-[#2A2A2A]">Rovyk</h2>
-              <h3 className="text-xl text-[#343434] font-semibold">AI Powerhouse</h3>
-              <p className="text-[#343434] text-sm lg:text-lg">
+              <motion.div
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ delay: 1.8, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              >
+                <Image
+                  src="/images/rovyk.svg"
+                  alt="Rovyk Logo"
+                  width={50}
+                  height={50}
+                />
+              </motion.div>
+              <motion.h2 
+                className="text-2xl lg:text-4xl font-semibold text-[#2A2A2A]"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 2, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              >
+                Rovyk
+              </motion.h2>
+              <motion.h3 
+                className="text-xl text-[#343434] font-semibold"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 2.2, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              >
+                AI Powerhouse
+              </motion.h3>
+              <motion.p 
+                className="text-[#343434] text-sm lg:text-lg"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 2.4, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              >
                 Rovyk lets you seamlessly switch between top AI models—all in
                 one place, effortlessly, making your workflow smoother and more
                 efficient.
-              </p>
+              </motion.p>
             </div>
             <Link
               href="https://rovyk.com"
@@ -88,11 +185,18 @@ const Products = () => {
               rel="noopener noreferrer"
               className="w-fit hover:cursor-pointer"
             >
-              <button className="bg-[#2F2C28] text-white px-10 py-4 rounded-full hover:bg-[#3F3F3B] transition-colors mt-6 w-fit cursor-pointer">
+              <motion.button 
+                className="bg-[#2F2C28] text-white px-10 py-4 rounded-full hover:bg-[#3F3F3B] transition-colors mt-6 w-fit cursor-pointer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 2.6, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              >
                 Try Now
-              </button>
+              </motion.button>
             </Link>
-          </div>
+          </motion.div>
         </div>
       </div>
 

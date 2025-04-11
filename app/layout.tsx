@@ -8,8 +8,8 @@ const fustat = Fustat({
 });
 
 export const metadata: Metadata = {
-  title: "Neural Paths",
-  description: "Where data meets neural intelligence",
+  title: "Neural Paths - The Cognitive Core Fueling Next-Gen Business Growth",
+  description: "Neural Networks Reimagined as Pathways to Insight, Pushing past the boundaries of conventional analytics.",
 };
 
 export default function RootLayout({
