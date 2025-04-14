@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 const Footer = () => {
   return (
     <motion.footer 
-      className="w-full bg-[url('/images/footer.jpg')] bg-cover bg-top bg-no-repeat px-4 py-10 shadow-[0_-8px_0_0_#7E7367] rounded-t-2xl"
+      className="w-full bg-[url('/images/footer.jpg')] bg-cover bg-top bg-no-repeat px-4 py-10 shadow-[0_-8px_0_0_#7E7367] rounded-t-2xl max-w-[1920px] mx-auto"
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ 
@@ -40,7 +40,7 @@ const Footer = () => {
 
           {/* Links and Copyright */}
           <motion.div 
-            className="flex flex-col sm:flex-row justify-between items-start sm:items-center w-full md:pt-10 space-y-4 sm:space-y-0"
+            className="flex flex-col sm:flex-row justify-between items-start sm:items-center w-full md:py-4 space-y-4 sm:space-y-0 bg-[#2E2A25]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 3.2, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
