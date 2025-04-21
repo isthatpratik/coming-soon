@@ -28,12 +28,12 @@ const Footer = () => {
           >
             <Image
               src="/images/neural-paths-footer.svg"
-              alt="Neural Paths Logo"
+              alt="NeuralArc Logo"
               width={64}
               height={64}
             />
             <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-2">
-              <span className="text-white font-semibold text-base sm:text-xl md:text-2xl">Neural Paths</span>
+              <span className="text-white font-semibold text-base sm:text-xl md:text-2xl">NeuralArc</span>
               <span className="text-[#64594E] hidden sm:inline border-l text-xs sm:text-sm md:text-base border-[#FFFFFF]/10 px-4">Where data meets neural intelligence</span>
             </div>
           </motion.div>
@@ -68,12 +68,12 @@ const Footer = () => {
             
             <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-1 sm:space-y-0 sm:space-x-2 text-[#B4B0AA] text-xs sm:text-sm">
               <span>Copyright 2025. All rights reserved.</span>
-              <span className="hidden sm:inline">Neural Paths</span>
+              <span className="hidden sm:inline">NeuralArc</span>
             </div>
 
             <div className="text-gray-400 text-xs sm:text-sm">
               <span className='text-[#988C7D]'>A thing by</span>
-              <span className="ml-1 text-white font-semibold">NEURAL PATHS</span>
+              <span className="ml-1 text-white font-semibold tracking-widest">NEURALARC</span>
             </div>
           </motion.div>
         </div>

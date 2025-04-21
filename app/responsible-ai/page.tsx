@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
-  title: 'Responsible AI | Neural Paths',
+  title: 'Responsible AI | NeuralArc',
   description: 'Our commitment to ethical, transparent, and fair AI solutions',
 }
 
@@ -18,7 +18,7 @@ export default function ResponsibleAIPage() {
 
           <div className="prose prose-lg lg:prose-xl text-[#2F2C28]">
             <p className="text-lg lg:text-xl mb-8">
-              At Neural Paths, we are dedicated to building and deploying AI solutions that drive growth for startups and investors while maintaining the highest standards of ethics, transparency, and fairness. Our commitment to Responsible AI is deeply embedded in our technology, services, and decision-making processes.
+              At NeuralArc, we are dedicated to building and deploying AI solutions that drive growth for startups and investors while maintaining the highest standards of ethics, transparency, and fairness. Our commitment to Responsible AI is at the core of everything we do.
             </p>
 
             <section className="mb-12">
@@ -40,7 +40,7 @@ export default function ResponsibleAIPage() {
               <h2 className="text-3xl lg:text-4xl font-semibold text-[#2F2C28] mb-6">Transparent Decision-Making in Deal Flow Management</h2>
               <ul className="list-disc pl-6 text-lg lg:text-xl space-y-4">
                 <li>
-                  <span className="font-semibold">AI-Assisted Insights:</span> Neural Paths CRM leverages AI to help startups manage their sales pipelines and investors manage deal flow, providing real-time insights and forecasts.
+                  <span className="font-semibold">AI-Assisted Insights:</span> NeuralArc CRM leverages AI to help startups manage their sales pipelines and investors manage deal flow, providing real-time insights and forecasts.
                 </li>
                 <li>
                   <span className="font-semibold">Interpretability:</span> Users can easily understand how AI-driven predictions are generated, fostering trust in our technology.
@@ -112,7 +112,7 @@ export default function ResponsibleAIPage() {
             </section>
 
             <p className="text-lg lg:text-xl mt-12">
-              At Neural Paths, Responsible AI is not just a commitment—it is a core principle driving innovation, trust, and value creation for startups and investors alike.
+              At NeuralArc, Responsible AI is not just a commitment—it is a core principle driving innovation, trust, and value creation for startups and investors alike.
             </p>
           </div>
         </div>

@@ -45,7 +45,7 @@ const Products = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.8, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           >
-            Want early access to Neural Nexus or other MicroSaaS tools?
+            Want early access to NeuralNod or other MicroSaaS tools?
           </motion.h3>
           <motion.div 
             className="mt-8"
@@ -55,7 +55,7 @@ const Products = () => {
           >
             <button 
               onClick={() => setIsWaitlistOpen(true)}
-              className="bg-[#2F2C28] text-white px-9 py-5 rounded-full hover:bg-[#3F3F3B] transition-colors cursor-pointer"
+              className="bg-[#2F2C28] text-white px-9 py-5 rounded-full hover:bg-[#3F3F3B] hover:shadow-[0_5px_0_0_#C6AEA3] transition-all cursor-pointer"
             >
               Join The Waitlist
             </button>
@@ -119,7 +119,7 @@ const Products = () => {
               className="w-fit hover:cursor-pointer"
             >
               <motion.button 
-                className="bg-[#2F2C28] text-white px-10 py-4 rounded-full hover:bg-[#3F3F3B] transition-colors mt-6 w-fit cursor-pointer"
+                className="bg-[#2F2C28] text-white px-10 py-4 rounded-full hover:bg-[#3F3F3B] hover:shadow-[0_5px_0_0_#C6AEA3] transition-all mt-6 w-fit cursor-pointer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 initial={{ opacity: 0, y: 20 }}
@@ -186,7 +186,7 @@ const Products = () => {
               className="w-fit hover:cursor-pointer"
             >
               <motion.button 
-                className="bg-[#2F2C28] text-white px-10 py-4 rounded-full hover:bg-[#3F3F3B] transition-colors mt-6 w-fit cursor-pointer"
+                className="bg-[#2F2C28] text-white px-10 py-4 rounded-full hover:bg-[#3F3F3B] hover:shadow-[0_5px_0_0_#C6AEA3] transition-all mt-6 w-fit cursor-pointer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 initial={{ opacity: 0, y: 20 }}

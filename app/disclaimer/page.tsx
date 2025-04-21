@@ -2,8 +2,8 @@ import { Metadata } from 'next'
 import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
-  title: 'AI Content Disclaimer | Neural Paths',
-  description: 'AI Content Disclaimer for Neural Paths website',
+  title: 'AI Content Disclaimer | NeuralArc',
+  description: 'AI Content Disclaimer for NeuralArc website',
 }
 
 export default function DisclaimerPage() {

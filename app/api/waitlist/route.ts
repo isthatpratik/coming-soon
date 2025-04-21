@@ -68,20 +68,20 @@ export async function POST(request: Request) {
     try {
       await transporter.sendMail({
         from: {
-          name: 'Neural Paths',
+          name: 'NeuralArc',
           address: process.env.SMTP_USER!
         },
         to: email,
-        subject: 'Welcome to Neural Paths Waitlist!',
+        subject: 'Welcome to NeuralArc Waitlist!',
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-            <h1 style="color: #2F2C28; margin-bottom: 24px;">Welcome to Neural Paths!</h1>
+            <h1 style="color: #2F2C28; margin-bottom: 24px;">Welcome to NeuralArc!</h1>
             <p style="color: #343434; font-size: 16px; line-height: 1.5; margin-bottom: 16px;">Dear ${name},</p>
             <p style="color: #343434; font-size: 16px; line-height: 1.5; margin-bottom: 16px;">Thank you for joining our waitlist. We're excited to have you on board!</p>
             <p style="color: #343434; font-size: 16px; line-height: 1.5; margin-bottom: 16px;">We'll keep you updated about our launch and early access opportunities.</p>
             <div style="margin: 32px 0;">
               <p style="color: #343434; font-size: 16px; line-height: 1.5; margin-bottom: 8px;">Best regards,</p>
-              <p style="color: #343434; font-size: 16px; line-height: 1.5; margin-bottom: 0;">The Neural Paths Team</p>
+              <p style="color: #343434; font-size: 16px; line-height: 1.5; margin-bottom: 0;">The NeuralArc Team</p>
             </div>
           </div>
         `

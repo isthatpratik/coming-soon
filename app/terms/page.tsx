@@ -2,8 +2,8 @@ import { Metadata } from 'next'
 import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
-  title: 'Terms of Use | Neural Paths',
-  description: 'Terms of Use for Neural Paths website',
+  title: 'Terms of Use | NeuralArc',
+  description: 'Terms of Use for NeuralArc website',
 }
 
 export default function TermsPage() {
@@ -21,8 +21,8 @@ export default function TermsPage() {
             </section>
 
             <section className="mb-8">
-              <h2 className="text-3xl lg:text-4xl font-semibold text-[#2F2C28] mb-4">2. About Neural Paths</h2>
-              <p className="text-lg lg:text-xl">Neural Paths provides strategic legal operations consulting and solutions for investors and founders. The content provided on this website is for informational purposes only and does not constitute legal, financial, or professional advice.</p>
+              <h2 className="text-3xl lg:text-4xl font-semibold text-[#2F2C28] mb-4">2. About NeuralArc</h2>
+              <p className="text-lg lg:text-xl">NeuralArc provides strategic legal operations consulting and solutions for investors and founders. The content provided on this website is for informational purposes only and does not constitute legal advice.</p>
             </section>
 
             <section className="mb-8">
@@ -38,7 +38,7 @@ export default function TermsPage() {
 
             <section className="mb-8">
               <h2 className="text-3xl lg:text-4xl font-semibold text-[#2F2C28] mb-4">4. Intellectual Property</h2>
-              <p className="text-lg lg:text-xl">All content, trademarks, logos, and other intellectual property displayed on the website are the property of Neural Paths or its licensors. You may not use, reproduce, or distribute any such materials without written permission.</p>
+              <p className="text-lg lg:text-xl">All content, including text, graphics, logos, and images displayed on the website are the property of NeuralArc or its licensors. You may not use, reproduce, or distribute any such materials without written permission.</p>
             </section>
 
             <section className="mb-8">
@@ -48,7 +48,7 @@ export default function TermsPage() {
 
             <section className="mb-8">
               <h2 className="text-3xl lg:text-4xl font-semibold text-[#2F2C28] mb-4">6. Limitation of Liability</h2>
-              <p className="text-lg lg:text-xl">To the fullest extent permitted by law, Neural Paths shall not be liable for any direct, indirect, incidental, or consequential damages arising from the use of or inability to use the website.</p>
+              <p className="text-lg lg:text-xl">To the fullest extent permitted by law, NeuralArc shall not be liable for any direct, indirect, incidental, or consequential damages arising from the use of or inability to use the website.</p>
             </section>
 
             <section className="mb-8">

@@ -2,8 +2,8 @@ import { Metadata } from 'next'
 import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Neural Paths',
-  description: 'Privacy Policy for Neural Paths website',
+  title: 'Privacy Policy | NeuralArc',
+  description: 'Privacy Policy for NeuralArc website',
 }
 
 export default function PrivacyPage() {
@@ -15,7 +15,7 @@ export default function PrivacyPage() {
           <div className="prose prose-lg lg:prose-xl text-[#2F2C28]">
             <p className="text-[#767676] mb-8 text-lg lg:text-xl">Effective Date: April, 2025<br />Website: https://neuralpaths.ai</p>
 
-            <p className="text-lg lg:text-xl mb-8">Neural Paths (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) respects your privacy and is committed to protecting the personal information you provide to us. This Privacy Policy outlines how we collect, use, and safeguard your information when you visit our website.</p>
+            <p className="text-lg lg:text-xl mb-8">NeuralArc (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) respects your privacy and is committed to protecting the personal information you provide to us. This Privacy Policy outlines how we collect, use, and safeguard your information when you visit our website.</p>
 
             <section className="mb-8">
               <h2 className="text-3xl lg:text-4xl font-semibold text-[#2F2C28] mb-4">1. Information We Collect</h2>
